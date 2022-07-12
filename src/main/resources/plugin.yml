@@ -1,0 +1,8 @@
+name: SoulOfDream
+main: tw.org.anikaba.soulofdream.SoulOfDream
+version: 1.18.0.1
+author: anikaba(弈昕)
+description: 夢想之魂 ( SoulOfDream )
+website: https://blog.xuite.net/anikaba/SoulOfDream
+prefix: 夢想之魂-SoulOfDream
+api-version: 1.18
