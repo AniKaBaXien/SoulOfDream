@@ -12,15 +12,18 @@ import java.util.Arrays;
 import java.util.Map;
 import java.util.logging.Logger;
 
+/**
+ * @author anikaba
+ */
 public class Main extends JavaPlugin {
 
-    private Logger log = getLogger();
+    private Logger logger = getLogger();
 
     @Override
     public void onEnable() {
-        getServer().getPluginManager().registerEvents(new TestEvent(), this);
+        getServer().getPluginManager().registerEvents(new TestEvent(logger), this);
         // init();
-        log.info("測試開始");
+        logger.info("測試開始");
         test();
     }
 
@@ -30,12 +33,7 @@ public class Main extends JavaPlugin {
 
     private void test() {
         int version = Bukkit.getUnsafe().getDataVersion();
-        Arrays.stream(Material.values()).toList().forEach(material -> {
-            ItemStack stack = new ItemStack(material);
-            Map<String, Object> map = stack.serialize();
-            log.info("==========================================");
-            log.info(map.toString());
-        });
+
     }
 
     private void init() {
