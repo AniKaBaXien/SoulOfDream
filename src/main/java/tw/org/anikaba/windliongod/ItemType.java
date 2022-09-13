@@ -1162,10 +1162,10 @@ public enum ItemType {
     殭屍村民生怪蛋(Material.ZOMBIE_VILLAGER_SPAWN_EGG),
     殭屍化豬布林生怪蛋(Material.ZOMBIFIED_PIGLIN_SPAWN_EGG);
 
-    private Material material;
+    private final Material material;
 
     ItemType(Material material) {
-        material = this.material;
+        this.material = material;
     }
 
     public Material getMaterial() {

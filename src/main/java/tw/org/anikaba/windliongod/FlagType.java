@@ -18,7 +18,7 @@ public enum FlagType {
     隱藏藥水效果(ItemFlag.HIDE_POTION_EFFECTS),
     隱藏牢不可破(ItemFlag.HIDE_UNBREAKABLE);
 
-    private ItemFlag itemFlag;
+    private final ItemFlag itemFlag;
 
     FlagType(ItemFlag itemFlag) {
         this.itemFlag = itemFlag;
